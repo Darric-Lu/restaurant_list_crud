@@ -1,0 +1,101 @@
+<div class="container mx-auto p-5 my-5" style="color:#9b4b4b; background:#fce2cf; border-radius:8px;">
+  <h2 class="text-center">新增餐廳</h2>
+  <div class="p-3 mt-3">
+    <form action="/restaurants" method="POST" class="font-weight-light">
+      <!-- 餐廳中文名稱  -->
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">中文名稱 <small><i
+              class="fas fa-star-of-life text-danger"></i></small></label>
+        <div class="col-sm-10">
+          <input type="name" name="name" class="form-control" id="name" placeholder="艾朋牛排餐酒館" required>
+        </div>
+      </div>
+
+      <!-- 餐廳英文名稱  -->
+      <div class="form-group row">
+        <label for="name_en" class="col-sm-2 col-form-label">英文名稱</label>
+        <div class="col-sm-10">
+          <input type="name" name="name_en" class="form-control" id="name_en" placeholder="A Point Steak & Bar">
+        </div>
+      </div>
+
+      <!-- 餐廳編號  -->
+      <div class="form-group row">
+        <label for="id" class="col-sm-2 col-form-label">餐廳編號</label>
+        <div class="col-sm-10">
+          <input type="number" name="id" class="form-control" id="id" min="1" step="1" placeholder="4">
+        </div>
+      </div>
+
+      <!-- 餐廳類別  -->
+      <div class="form-group row">
+        <label for="category" class="col-sm-2 col-form-label">餐廳類別 <small><i
+              class="fas fa-star-of-life text-danger"></i></small></label>
+        <div class="col-sm-10">
+          <input type="text" name="category" class="form-control" id="category" placeholder="美式" required>
+        </div>
+      </div>
+
+      <!-- 餐廳照片  -->
+      <div class="form-group row">
+        <label for="image" class="col-sm-2 col-form-label">餐廳照片</label>
+        <div class="col-sm-10">
+          <input type="text" name="image" class="form-control" id="image"
+            placeholder="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5630/04.jpg">
+        </div>
+      </div>
+
+      <!-- 餐廳地址  -->
+      <div class="form-group row">
+        <label for="location" class="col-sm-2 col-form-label">餐廳地址</label>
+        <div class="col-sm-10">
+          <input type="text" name="location" class="form-control" id="location"
+            placeholder="110 台北市信義區忠孝東路五段 139 號 2 樓">
+        </div>
+      </div>
+
+      <!-- 餐廳電話  -->
+      <div class="form-group row">
+        <label for="phone" class="col-sm-2 col-form-label">餐廳電話</label>
+        <div class="col-sm-10">
+          <input type="text" name="phone" class="form-control" id="phone" placeholder=" 02 2756 7788">
+        </div>
+      </div>
+
+      <!-- Google Maps  -->
+      <div class="form-group row">
+        <label for="google_map" class="col-sm-2 col-form-label">Google Maps</label>
+        <div class="col-sm-10">
+          <input type="text" name="google_map" class="form-control" id="google_map"
+            placeholder="https://goo.gl/maps/6Lq7U2ahp152">
+        </div>
+      </div>
+
+      <!-- 餐廳評分  -->
+      <div class="form-group row">
+        <label for="rating" class="col-sm-2 col-form-label">餐廳評分 <small><i
+              class="fas fa-star-of-life text-danger"></i></small></label>
+        <div class="col-sm-10">
+          <input type="number" name="rating" class="form-control" id="rating" min="0" max="5" step="0.1"
+            placeholder="4.2" required>
+        </div>
+      </div>
+
+      <!-- 餐廳簡介  -->
+      <div class="form-group row">
+        <label for="description" class="col-sm-2 col-form-label">餐廳簡介</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" name="description" id="description" cols="48" rows="3"
+            placeholder="從味蕾開始，重拾美味感動。艾朋牛排餐酒館對高級料理的細選珍饌堅持，更勇於翻脫新意，要以平易親人的親切風格，同時不失料理獨家精髓，成功打動每吋挑剔味蕾，讓每位顧客享用鮮嫩Steak牛排風采，咀嚼Pasta義大利麵層次風味！"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-major" id="createItem">新增餐廳</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
