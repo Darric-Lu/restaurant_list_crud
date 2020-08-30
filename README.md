@@ -45,7 +45,7 @@ mongoDB v4.2.9 or higher
 Open MongoDB in (another) terminal
 
 ```
-$ cd ~[YOUR PATH]/mongodb/bin/
+$ cd ~/[YOUR PATH]/mongodb/bin/
 $ ./mongod --dbpath ~/[YOUR PATH]/mongodb-data
 
 ```
