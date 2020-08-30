@@ -42,6 +42,14 @@ mongoDB v4.2.9 or higher
 
 ## How To Use 🔧 如何使用
 
+Open MongoDB in (another) terminal
+
+```
+$ cd ~[YOUR PATH]/mongodb/bin/
+$ ./mongod --dbpath ~/[YOUR PATH]/mongodb-data
+
+```
+
 Clone this repository
 
 ```
@@ -60,9 +68,21 @@ Install the dependencies using NPM
 $ npm install
 ```
 
-Run the app
+Run seeds
 
 ```
 $ npm run seed
+```
+
+After seeing `mongodb connected!` and `done`, press `ctrl + c` to exit
+
+```
+mongodb connected!
+done
+```
+
+Run the app
+
+```
 $ npm run dev
 ```
