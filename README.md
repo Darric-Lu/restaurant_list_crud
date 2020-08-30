@@ -45,7 +45,7 @@ mongoDB v4.2.9 or higher
 Clone this repository
 
 ```
-$ git clone https://github.com/tingchun0113/trash_talk_generator.git
+$ git clone https://github.com/tingchun0113/restaurant_list_crud.git
 ```
 
 Go into the repository
